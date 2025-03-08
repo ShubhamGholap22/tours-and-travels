@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form - Tours & Travels</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="form.css">
+    <style>
+        body {
+            margin: 1%;
+            padding-left: 38%;
+            background-image: url('img/asset11.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        form {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 10%;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+        }
+
+        .form-group {
+            display: block;
+            margin: 10px 0;
+        }
+
+        .form-wrapper {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        button {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-wrapper" id="formWrapper">
+        <form id="animeForm" action="submit_booking.php" method="POST">
+            <h2>🛫 Book Your Trip</h2>
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="int" id="phone" name="pno" placeholder="Enter your phone number" required>
+            </div>
+            <div class="form-group">
+                <label for="destination">Add Destination</label>
+                <input type="text" name="dest" id="dest" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Travel Date</label>
+                <input type="date" id="date" name="t_date" required>
+            </div>
+            <div class="form-group">
+                <label for="travelers">Number of Travelers</label>
+                <input type="number" id="travelers" name="num_travellers" min="1" max="10" value="1" required>
+            </div>
+            <button type="submit" onclick="handleSubmit(event)">Submit Request</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

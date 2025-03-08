@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Tour Packages & Why Choose Us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-image: url('img/home_bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        /* Top Tour Packages Section */
+        .packages {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .package-card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+        .package-card img {
+            width: 100%;
+            border-radius: 10px;
+            height: 180px;
+        }
+        .package-card h3 {
+            margin: 10px 0;
+            color: #ff6600;
+        }
+        .package-card p {
+            font-size: 14px;
+            color: #555;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            margin-top: 10px;
+            background: #ff6600;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        
+        /* Why Choose Us Section */
+        .why-choose {
+            background: white;
+            padding: 30px;
+            margin-top: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .why-choose ul {
+            list-style: none;
+            padding: 0;
+        }
+        .why-choose li {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #333;
+        }
+        .why-choose li::before {
+            content: "✔";
+            color: #ff6600;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        h2{
+            text-align: center;
+            margin-bottom: 20px;
+            color: aliceblue;
+            background-color: #333;
+            padding: 10px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        .top{
+            margin-left: 36%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Tour Packages -->
+    <div class="container">
+        <h2 class="top">🌍 Top Tour Packages</h2>
+        <div class="packages">
+            <div class="package-card">
+                <img src="img/paris.jpg" alt="Paris">
+                <h3>Paris Getaway</h3>
+                <p>5 Days, 4 Nights – From $999</p>
+                <p>✨ Eiffel Tower, Museums, Seine River Cruise</p>
+                <a href="booking.html" class="btn">Book Now</a>
+            </div>
+            <div class="package-card">
+                <img src="img/maldives.jpg" alt="Maldives">
+                <h3>Maldives Luxury</h3>
+                <p>7 Days, 6 Nights – From $1499</p>
+                <p>🏝️ Beach Resorts, Snorkeling, Sunset Cruise</p>
+                <a href="booking.html" class="btn">Book Now</a>
+            </div>
+            <div class="package-card">
+                <img src="img/tokyo.jpg" alt="Tokyo">
+                <h3>Explore Tokyo</h3>
+                <p>6 Days, 5 Nights – From $1199</p>
+                <p>🗼 Shibuya, Akihabara, Mt. Fuji Trip</p>
+                <a href="booking.html" class="btn">Book Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Why Choose Us -->
+    <div class="container">
+        <div class="why-choose">
+            <h2>🌟 Why Choose Us?</h2>
+            <ul>
+                <li>Best Price Guarantee</li>
+                <li>24/7 Customer Support</li>
+                <li>Expert Travel Guides</li>
+                <li>Customizable Packages</li>
+                <li>Easy & Secure Booking</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

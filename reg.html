@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <mata name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Registration Form</title>
+        <link rel="stylesheet" href="form.css">
+        <style>
+            body{
+                background-image: url('img/asset9.jpg');
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="form-wrapper" id="formWrapper">
+            <form id="animeForm" method="POST" action="reg.php">
+            <h2>Registration Form</h2>
+            <input type="text" name="name" placeholder="Your Name" required><br>
+            <input type="int" name="mno" placeholder="Your Mobile No" required><br>  
+            <input type="email" name="email" placeholder="Your Email" required><br>  
+            <input type="text" name="address" placeholder="Your Address" required><br>  
+            <input type="int" name="pincode" placeholder="Your Pincode" required><br> 
+            <button type="submit" onclick="handleSubmit(event)">Submit Request</button>
+            </form>
+        </div>
+    </body>
+</html>

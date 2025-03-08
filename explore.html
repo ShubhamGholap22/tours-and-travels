@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore - Tours & Travels</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-image: url('img/asset11.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        /* Hero Section */
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?travel,nature') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        }
+        /* Featured Destinations */
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+        .featured h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: aliceblue;
+            background-color: #333;
+            padding: 10px;
+            border-radius: 10px;
+            display: inline-block;
+            margin-left: 36%;
+        }
+
+        h2{
+            text-align: center;
+            margin-bottom: 20px;
+            color: aliceblue;
+            background-color: #333;
+            padding: 10px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        .destinations {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .destination-card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+        .destination-card img {
+            width: 100%;
+            border-radius: 10px;
+            height: 180px;
+        }
+        .destination-card h3 {
+            margin: 10px 0;
+            color: #ff6600;
+        }
+        .destination-card p {
+            font-size: 14px;
+            color: #555;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            margin-top: 10px;
+            background: #ff6600;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        /* Customer Reviews */
+        .reviews {
+            background: white;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .review {
+            font-size: 16px;
+            color: #333;
+            margin-top: 10px;
+        }
+        .review i {
+            color: gold;
+        }
+        /* Call to Action */
+        .cta {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background: #ff6600;
+            color: white;
+            font-size: 20px;
+        }
+        .cta a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        🌍 Discover Your Next Adventure!
+    </div>
+
+    <!-- Featured Destinations -->
+    <div class="featured">
+        <h2>🏝️ Featured Destinations</h2>
+        <div class="destinations">
+            <div class="destination-card">
+                <img src="img/paris.jpg" alt="Paris">
+                <h3>Paris, France</h3>
+                <p>Explore the City of Lights with its iconic Eiffel Tower and rich culture.</p>
+            </div>
+            <div class="destination-card">
+                <img src="img/maldives.jpg" alt="Maldives">
+                <h3>Maldives</h3>
+                <p>Experience crystal-clear waters and luxury resorts in paradise.</p>
+            </div>
+            <div class="destination-card">
+                <img src="img/tokyo.jpg" alt="Tokyo">
+                <h3>Tokyo, Japan</h3>
+                <p>Discover a mix of tradition and modern life in the heart of Japan.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Customer Reviews -->
+    <div class="container">
+        <div class="reviews">
+            <h2>⭐ Customer Reviews</h2>
+            <p class="review"><i class="fas fa-star"></i> "Best trip ever! Everything was perfectly planned." - Pranit D.</p>
+            <p class="review"><i class="fas fa-star"></i> "Loved the Maldives package. Worth every penny!" - Aditya G.</p>
+            <p class="review"><i class="fas fa-star"></i> "Great experience! Would highly recommend." - Yogesh A.</p>
+            <p class="review"><i class="fas fa-star"></i> "Amazing service and unforgettable memories!" - Neeraj M.</p>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="cta">
+        🌟 Ready for your dream trip? <a href="booking.html">Book Now!</a>
+    </div>
+
+</body>
+</html>
